@@ -9,8 +9,4 @@ function run {
 
 run /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-run nm-applet
-run volumeicon
-run gnome-screensaver
-run solaar
 run setxkbmap -layout us -variant altgr-intl -option ctrl:swapcaps

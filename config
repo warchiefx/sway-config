@@ -32,8 +32,8 @@ workspace_auto_back_and_forth yes
 # Borders
 for_window [class="^.*"] border pixel 0
 for_window [floating] border normal 2
-default_border pixel 0
-default_floating_border normal 2
+# default_border pixel 0
+# default_floating_border normal 2
 # for_window [window_type=floating] border pixel 1
 # default_floating_border pixel 1
 # workspace_layout tabbed
@@ -155,9 +155,9 @@ bindsym $mod+Shift+0 move container to workspace number $w10
 
 # Rules
 assign [class=Emacs] $w4
-assign [class=Termite] $w4
-assign [class=Evolution] $w3
-assign [class=TelegramDesktop] $w2
+assign [app_id=termite] $w4
+assign [app_id=evolution] $w3
+assign [app_id=org.telegram.desktop] $w2
 assign [class=Slack] $w2
 assign [class=Spotify] $w7
 assign [class=Zeal] $w8
@@ -245,11 +245,11 @@ input "*" {
     xkb_options ctrl:swapcaps
 }
 
-# Notification MAnager
-exec dunst
-
 # Autorun some things
 exec ~/.config/sway/autorun.sh
+
+# Notification Manager
+exec dunst -conf ~/.config/sway/dunstrc
 
 # The Bar
 bar {
