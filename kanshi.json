@@ -1,9 +1,9 @@
 {
-  output LVDS-2 enable
-  output  "Goldstar Company Ltd LG ULTRAWIDE 0x0000D75B" position 0,0
+  output LVDS-2 mode 1920x1080 enable position 3440,0 scale 1
+  output "Goldstar Company Ltd LG ULTRAWIDE 0x0000D75B" mode 3440x1440 position 0,0 enable scale 1
 }
 
 {
-   output LVDS-2 enable
+   output LVDS-2 enable scale 1
    output DP-1 disable
 }
