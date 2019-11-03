@@ -227,10 +227,10 @@ mode "resize" {
 bindsym $mod+Control+e mode "resize"
 
 # Idle configuration
-exec swayidle \
-    timeout 300 'exec $lock' \
-    timeout 600 'swaymsg "output * dpms off"' \
-    after-resume 'swaymsg "output * dpms on"' \
+exec swayidle -w \
+    timeout 300 '$lock' \
+    timeout 600 'if pgrep -x swaylock; then swaymsg "output * dpms off"; fi' \
+    resume 'swaymsg "output * dpms on"' \
     before-sleep 'exec $lock'
 
 # Restore GNOME's settings

@@ -7,4 +7,5 @@
 - grim
 - slurp
 - swaylock
+- swayidle
 - playerctl
