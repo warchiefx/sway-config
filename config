@@ -256,4 +256,6 @@ bar {
     swaybar_command waybar
 }
 
+exec kanshi
+
 include ~/.config/sway/config.d/*

@@ -9,3 +9,4 @@
 - swaylock
 - swayidle
 - playerctl
+- kanshi
