@@ -1,0 +1,9 @@
+{
+  output LVDS-2 enable
+  output  "Goldstar Company Ltd LG ULTRAWIDE 0x0000D75B" position 0,0
+}
+
+{
+   output LVDS-2 enable
+   output DP-1 disable
+}
