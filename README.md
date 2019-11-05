@@ -9,4 +9,5 @@
 - swaylock
 - swayidle
 - playerctl
+- mako
 - kanshi
