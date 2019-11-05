@@ -250,7 +250,7 @@ exec ~/.config/sway/autorun.sh
 
 # Notification Manager
 # exec dunst -conf ~/.config/sway/dunst/dunstrc
-exec mako --background-color "#000000dd" --border-size 2 --border-radius 1 --font "Lato 10" --border-color "#000000dd"
+exec mako
 
 # The Bar
 bar {
